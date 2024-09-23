@@ -30,12 +30,12 @@ document.getElementById('nk-donation-button').addEventListener('click', function
         document.getElementById('nk-donation').innerText = donation.toFixed(2);
 
         // donation history
-        let placeName = document.getElementById('place-name');
+        let placeName = document.getElementById('nk-place-name');
         let historySection = document.getElementById('history-section');
         let newHistoryContainer = document.createElement('div');
         let newHistory = document.createElement('h1');
         let donationTime = document.createElement('p');
-        
+        let my_modal_1 = document.getElementById('my_modal');
 
         newHistoryContainer.classList.add('border');
         newHistoryContainer.classList.add('rounded-lg');
@@ -44,7 +44,7 @@ document.getElementById('nk-donation-button').addEventListener('click', function
         newHistory.classList.add('font-bold');
         newHistory.classList.add('pb-4');
         newHistory.innerText = `You donated ${dnAmount} ${placeName.innerText}`;
-        donationTime.innerText = `Time: ` + new Date() ;
+        donationTime.innerText = `Date: ` + new Date() ;
         historySection.appendChild(newHistoryContainer);
         newHistoryContainer.appendChild(newHistory);
         newHistoryContainer.appendChild(donationTime);
@@ -74,11 +74,12 @@ document.getElementById('fn-donation-button').addEventListener('click', function
         document.getElementById('fn-donation').innerText = donation.toFixed(2);
 
         // donation history
-        let placeName = document.getElementById('place-name');
+        let placeName = document.getElementById('fn-place-name');
         let historySection = document.getElementById('history-section');
         let newHistoryContainer = document.createElement('div');
         let newHistory = document.createElement('h1');
         let donationTime = document.createElement('p');
+        let my_modal_1 = document.getElementById('my_modal');
         
 
         newHistoryContainer.classList.add('border');
@@ -88,7 +89,7 @@ document.getElementById('fn-donation-button').addEventListener('click', function
         newHistory.classList.add('font-bold');
         newHistory.classList.add('pb-4');
         newHistory.innerText = `You donated ${dnAmount} ${placeName.innerText}`;
-        donationTime.innerText = `Time: ` + new Date() ;
+        donationTime.innerText = `Date: ` + new Date() ;
         historySection.appendChild(newHistoryContainer);
         newHistoryContainer.appendChild(newHistory);
         newHistoryContainer.appendChild(donationTime);
@@ -118,11 +119,12 @@ document.getElementById('q-donation-button').addEventListener('click', function(
         document.getElementById('q-donation').innerText = donation.toFixed(2);
 
         // donation history
-        let placeName = document.getElementById('place-name');
+        let placeName = document.getElementById('q-place-name');
         let historySection = document.getElementById('history-section');
         let newHistoryContainer = document.createElement('div');
         let newHistory = document.createElement('h1');
         let donationTime = document.createElement('p');
+        let my_modal_1 = document.getElementById('my_modal');
         
 
         newHistoryContainer.classList.add('border');
@@ -132,7 +134,7 @@ document.getElementById('q-donation-button').addEventListener('click', function(
         newHistory.classList.add('font-bold');
         newHistory.classList.add('pb-4');
         newHistory.innerText = `You donated ${dnAmount} ${placeName.innerText}`;
-        donationTime.innerText = `Time: ` + new Date() ;
+        donationTime.innerText = `Date: ` + new Date() ;
         historySection.appendChild(newHistoryContainer);
         newHistoryContainer.appendChild(newHistory);
         newHistoryContainer.appendChild(donationTime);
